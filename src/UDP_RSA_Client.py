@@ -156,7 +156,7 @@ class RSA_Signature:
         except rsa.pkcs1.VerificationError:
             return False
 
-def set_gpiod_output(LINE = 12, VALUE = True, CHIP="/dev/gpiochip4"):
+def set_gpiod_output(LINE = 12, VALUE = True, CHIP="/dev/gpiochip0"):
     if (VALUE == True):
         V_ = Value.ACTIVE
     else:
